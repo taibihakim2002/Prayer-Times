@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosClient = axios.create({
-  baseURL: "http://api.aladhan.com/v1",
+  baseURL: "https://api.aladhan.com/v1",
 });
 
 const getCityData = (country, city) => {

@@ -38,7 +38,7 @@ function App() {
       setMinuts(Math.floor((difference % 3600) / 60));
       setSeconds((difference % 3600) % 60);
 
-      // Set up an interval to update the remaining time every second
+
       var interval = setInterval(() => {
         setSeconds((s) => {
           if (s === 0) {
