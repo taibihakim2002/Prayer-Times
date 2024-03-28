@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+html {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(32, 33, 37);
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.top-bar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-bottom: 1px solid #777;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.top-bar .section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-bar .section h4 {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.top-bar .section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.buttom-bar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+.buttom-bar .card {
+  background-color: white;
+  overflow: hidden;
+}
+.buttom-bar .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.buttom-bar .card h4 {
+  color: black;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.buttom-bar .card h2 {
+  color: black;
+  padding: 0 15px 20px;
+  font-size: 2rem;
+}
+
+.select select {
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: inherit;
+  color: white;
+}
+
+.select select option {
+  background-color: rgb(32, 33, 37);
+  padding: 10px;
+}
