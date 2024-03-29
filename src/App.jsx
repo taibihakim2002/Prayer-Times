@@ -24,7 +24,7 @@ function App() {
     const magreb = new Date();
     const m = times.Maghrib;
     const [hours, minuts] = m.split(":");
-    magreb.setHours(hours, minuts, 0, 0);
+    magreb.setHours(hours, minuts + 3, 0, 0);
     return Math.floor((magreb - nowDate) / 1000);
   };
 
@@ -37,7 +37,6 @@ function App() {
       setHours(Math.floor(difference / 3600));
       setMinuts(Math.floor((difference % 3600) / 60));
       setSeconds((difference % 3600) % 60);
-
 
       var interval = setInterval(() => {
         setSeconds((s) => {
